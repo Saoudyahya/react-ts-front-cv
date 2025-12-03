@@ -40,6 +40,65 @@ body {
   opacity: 0.9;
 }
 
+.server-status {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.server-status.checking {
+  background: rgba(255, 193, 7, 0.3);
+  color: #fff;
+}
+
+.server-status.online {
+  background: rgba(40, 167, 69, 0.3);
+  color: #fff;
+}
+
+.server-status.offline {
+  background: rgba(220, 53, 69, 0.3);
+  color: #fff;
+}
+
+.offline-banner {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.offline-banner h2 {
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+
+.offline-banner p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.offline-banner code {
+  display: block;
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  color: #667eea;
+}
+
+.offline-banner button {
+  margin-top: 20px;
+}
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -177,6 +236,18 @@ body {
   overflow: hidden;
   position: relative;
   margin-bottom: 15px;
+}
+
+.frame-counter {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .camera-image {
